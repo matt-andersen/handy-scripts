@@ -9,8 +9,8 @@ sudo yum install -y ansible nano git epel-release dnf
 
 echo "Installing and configuring Docker"
 sudo dnf -y install dnf-plugins-core
-sudo dnf config-manager \
+sudo dnf -y  config-manager \
     --add-repo \
     https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io
+sudo dnf -y install docker-ce docker-ce-cli containerd.io
 sudo systemctl start docker
