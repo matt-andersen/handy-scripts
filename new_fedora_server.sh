@@ -4,7 +4,7 @@ echo "Running update"
 sudo yum -y update
 
 echo "Installing other packages"
-sudo yum install -y ansible nano git dnf
+sudo yum install -y ansible nano git epel-release dnf
 
 
 echo "Installing and configuring Docker"
