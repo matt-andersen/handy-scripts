@@ -14,5 +14,5 @@ sudo dnf -y  config-manager \
     https://download.docker.com/linux/fedora/docker-ce.repo
 sudo dnf -y install docker-ce docker-ce-cli containerd.io
 sudo systemctl start docker
-
+sudo systemctl enable docker
 sudo groupadd docker && sudo gpasswd -a $USER docker && sudo systemctl restart docker
